@@ -6,4 +6,6 @@ class AppColors {
   static const Color greenlightOne = Color(0xFF63B5AF);
   static const Color greenlightTwo = Color(0xFF438883);
   static const Color whiteColor = Color(0xFFFFFFFF);
+  static const Color iceWhite = Color(0xFF0EEF8F7);
+  static const Color grey = Color(0xFF444444);
 }
