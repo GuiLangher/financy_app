@@ -1,5 +1,7 @@
+
 import 'package:financy_app/common/constants/app_colors.dart';
 import 'package:financy_app/common/constants/app_text_styles.dart';
+import 'package:financy_app/common/widgets/PrymaryButton.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -29,39 +31,15 @@ class OnBoardingPage extends StatelessWidget {
               color: AppColors.greenlightTwo,
             ),
           ),
-          SizedBox(height: 16.0),
-          Material(
-            borderRadius: BorderRadius.all(Radius.circular(38.0)),
-            child: Ink(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(38.0)),
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [AppColors.greenlightOne, AppColors.greenlightTwo],
-                ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: PrimaryButton(
+              text: 'Get Started',
+              onPressed: () {},
               ),
-              child: InkWell(
-                borderRadius: const BorderRadius.all(Radius.circular(38.0)),
-                onTap: () {},
-                child: Container(
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(38.0))
-                  ),
-                  alignment: Alignment.center,
-                  height: 64.0,
-                  child: Text(
-                    'Get Started',
-                    style: AppTextStyles.mediumText18.copyWith(
-                      color: AppColors.whiteColor,
-                    ),
-                    ),
-                ),
-              ),
-            ),
           ),
           Text(
-            'Já tem conta? Log In',
+            'Already have account? Sign In',
             style: AppTextStyles.smallText.copyWith(color: AppColors.grey),
           ),
           SizedBox(height: 60.0),
